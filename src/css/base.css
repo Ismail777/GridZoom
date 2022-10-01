@@ -2,6 +2,10 @@
 	font-family: '29LT Zeyn';
 	src: url('fonts/29LTZeyn.otf');
 }
+@font-face {
+	font-family: 'Zarid Serif';
+	src: url('fonts/zarid-serif.otf');
+}
 
 *,
 *::after,
@@ -10,7 +14,7 @@
 }
 
 :root {
-	font-size: 15px;
+	font-size: 16px;
 }
 
 body {
@@ -21,7 +25,7 @@ body {
 	--color-link-hover: #000;
 	color: var(--color-text);
 	background-color: var(--color-bg);
-	font-family: '29LT Zeyn', -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+	font-family: 'Zarid Serif', -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
 	text-align: right;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -150,8 +154,9 @@ a:focus-visible {
 }
 
 .frame__title {
+	font-family: '29LT Zeyn';
 	font-size: 1rem;
-	font-weight: 400;
+	font-weight: 600;
 	margin: 0 0 1rem 0;
 }
 
@@ -260,7 +265,7 @@ a:focus-visible {
 }
 
 .content__item-heading {
-	font-size: 4vw;
+	font-size: clamp(22px, 4vw, 48px);
 	line-height: 1;
 	margin: 1rem 0 3rem 0;
 	font-weight: 600;
@@ -268,7 +273,7 @@ a:focus-visible {
 
 .content__item-text {
 	max-width: 30ch;
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 }
 
 .content__item-link {

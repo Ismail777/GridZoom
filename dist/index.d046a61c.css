@@ -3,12 +3,17 @@
   src: url("29LTZeyn.173d48e1.otf");
 }
 
+@font-face {
+  font-family: Zarid Serif;
+  src: url("zarid-serif.1549b246.otf");
+}
+
 *, :after, :before {
   box-sizing: border-box;
 }
 
 :root {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 body {
@@ -22,7 +27,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
-  font-family: "29LT Zeyn", -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+  font-family: Zarid Serif, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -137,8 +142,9 @@ a:focus-visible {
 
 .frame__title {
   margin: 0 0 1rem;
+  font-family: "29LT Zeyn";
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .frame__links {
@@ -247,14 +253,14 @@ a:focus-visible {
 
 .content__item-heading {
   margin: 1rem 0 3rem;
-  font-size: 4vw;
+  font-size: clamp(22px, 4vw, 48px);
   font-weight: 600;
   line-height: 1;
 }
 
 .content__item-text {
   max-width: 30ch;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .content__item-link {
