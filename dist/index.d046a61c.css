@@ -13,7 +13,7 @@
 }
 
 :root {
-  font-size: 16px;
+  font-size: clamp(15px, 4vw, 18px);
 }
 
 body {
@@ -236,6 +236,7 @@ a:focus-visible {
 
 .content__item {
   opacity: 0;
+  padding-right: 2rem;
   display: grid;
   position: absolute;
 }
@@ -252,15 +253,16 @@ a:focus-visible {
 }
 
 .content__item-heading {
-  margin: 1rem 0 3rem;
-  font-size: clamp(22px, 4vw, 48px);
+  margin: 1rem 0;
+  font-family: "29LT Zeyn";
+  font-size: clamp(40px, 4vw, 48px);
   font-weight: 600;
   line-height: 1;
 }
 
 .content__item-text {
-  max-width: 30ch;
   margin-bottom: 1rem;
+  padding-right: 2rem;
 }
 
 .content__item-link {
